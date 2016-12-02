@@ -40,7 +40,7 @@ if ($getopt->getOption('h')) {
 $withData = $getopt->getOption('w');
 $env      = $getopt->getOption('e');
 defined('APPLICATION_ENV')
-    || define('APPLICATION_ENV', (null === $env) ? 'development' : $env);
+    || define('APPLICATION_ENV', (null === $env) ? 'production' : $env);
 
 // Initialize Zend_Application
 $application = new Zend_Application(
